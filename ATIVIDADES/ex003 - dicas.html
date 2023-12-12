@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>" Uma demonstração de ilusão "</title>
+    <style>
+        body {background-color: rgba(237, 162, 162, 0.69);
+        color: rgba(255, 0, 0, 0.875);
+        font: normal 16pt Arial;
+        };
+            
+    </style>
+</head>
+<body>
+    <H1>   O que é vernelho?</H1>
+    <p> ............ </p>
+    <p> Explicar... </p>
+   <script>
+    var n1 = Number(window.prompt('Digite um número')) //window.propt retorna string
+    var n2 = Number(window.prompt('Digite outro número'))
+    var s = n1 + n2
+                window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    /* 
+Converter para número:
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+
+converter para texto:
+String(n)
+n.toString()
+
+var s = 'logica de programação'
+'Estou aprendendendo s' =     //não faz a interpolação
+'Estou aprendendendo ' + s   //usa concatenação
+`Estou aprendendendo ${s}`   // usa template sring (placeholder)
+
+var nome = 'Gustavo'
+var idade = 41
+var nota = 5.5
+'O aluno ' + nome + 'com ' + idade + 'a nos, tirou a nota ' + nota
+'O Aluno' $(nome) com $(idade) anos tirou a nota $(nota)
+
+s.length            // quantidade que a string pode ter
+s.toUpperCase()     //tudo para 'MAIÚSCULAS'
+s.toLowerCase()     //tudo para 'minúsculas'
+
+//Formatando Números: (*Usar no terminal*)
+var n1 = 1545.5
+R = undefined
+n1.toFixed(2)
+R = 1545.50
+n1.toFixed(2).replace('.',',')
+R = 1545,50
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+R = R$ 1,545.00
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+R = US$ 1,545.00
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+R = € 1,545.00
+(* O terminar não inverte os '.' e ',' de acordo com a  moeda,
+mas o navegador faz a conversão,
+não precisa faze o replace como no exemplo abaixo *)
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}).replace('.',',')
+
+
+*/
+   </script>
+</body>
+</html>

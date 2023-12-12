@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt.BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <style>
+    body {
+        background: rgb(70, 142, 236);
+        font: normal 15pt Arial;
+    }
+    header {
+        color: white;
+        text-align: center;
+    }
+    sextion {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 10px;
+    }
+    footer {
+        color: white;
+        text-align: center;
+        font-style: italic;
+    }
+
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1> HORA DO DIA</h1>
+    </header>
+    <section>
+        <div id="msg">
+            Aqui vai aparece a mensagem...
+
+        </div>
+        <div id="foto"> 
+            Olá!
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso pelo Youtube </p>
+    </footer>
+    <script>
+        function carregar() {
+            var msg = window.document.getElementById('msg')
+            var img = window.document.getElementById('image')
+            var data = new Date()
+            //var hora = data.getHours()
+            var hora = 22
+            msg.innerHTML = `Agora são ${hora} horas.`
+            if (hora >= 0 && hora < 12) {
+                //bom dia
+                img.src = 'manha.png'
+                document.body.style.background = '#e2cd9f'
+            } else if (hora >= 12 && hora <= 18) {
+                //boa tarde
+                img.src = 'tarde.png'
+                document.body.style.background = '#b9846f'
+            } else {
+                //boa noite
+                img.src = 'noite.png'
+                documento.body.style.background = '#515154'
+            }
+        }
+
+
+    </script>
+</body>
+</html>

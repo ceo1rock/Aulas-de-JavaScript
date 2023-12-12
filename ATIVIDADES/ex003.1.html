@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>" Uma pequena demonstração de carinho "</title>
+    <style>
+        body {background-color: rgba(237, 162, 162, 0.69);
+        color: rgba(255, 0, 0, 0.875);
+        font: normal 16pt Arial;
+        };
+            
+    </style>
+</head>
+<body>
+    <H1>   O que é o amor?</H1>
+    <p> ............ </p>
+    <p> Explicar... </p>
+   <script>
+    var n1 = Number.parseInt(window.prompt('Digite um número'))
+    var n2 = Number.parseFloat(window.prompt('Digite outro número?'))
+    var n3 = Numer(window.prompt('Digite mais um número'))
+    var s = n1 + n2 + n3
+window.alert(`O resultado da soma é  ${s}!!!`) // "+" é concatenação 
+// n1.tofixed(2) // vai imprimir o número com 2 casas decimais
+// n1.tofixed(2).replace('.',',') // imprimi o número com 2 casa e troca o ponto por virgula
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) // vai imprimir o valor como R$ 0,00 
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}).replace('.',',') // vai imprimir o valor como R$ 0,00 
+
+
+   </script>
+</body>
+</html>

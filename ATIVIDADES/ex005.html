@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+       body{
+        background: rgba(95, 71, 71, 0.942);
+        color: white;
+        font: white 18pt Arial;
+       }
+    </style>
+</head>
+<body>
+    <h1>Iniciando o DOM</h1>
+    <p> Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <div id="msg1">Clique em mim</div>
+    <div class="msg">Clique em mim</div>
+    <div name="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] // tem que colocar qual 'p' pois Elements esta no plural
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        window.document.write(`Esta escrito assim:  ${p2.innerText}`)
+        p1.style.color = 'blue'
+        
+        var corpo = window.document.body
+        corpo.style.background = 'blue'
+        window.document.write(p2.innerHTML)
+       
+        var d = window.document.getElementById('msg') //não precisa do window
+        d.style.background = 'green'
+        // d.innerText = 'Estou aguardando!!!'
+        window.document.getElementById('msg').innerText = 'Olá'
+        window.document.getElementsByClassName('msg')[0]
+        
+
+        
+        var f = window.document.getElementsByName('msg')[0]
+        f.style.background = 'black'
+        f.innerText = 'EU CONSEGUI outra vez'       
+
+        var e = window.document.querySelector('div#msg1') // Toda id é representada por # e class é pontinho '.'
+        e.style.color = 'blue'
+        e.style.background = 'pink'
+        e.innerText = 'EU CONSEGUI'
+
+        var g = window.document.querySelector('div.msg') // Toda id é representada por # e class é pontinho '.'
+        g.style.color = 'black'
+        g.style.background = 'yellow'
+        g.innerText = 'EU CONSEGUI pelo poder do amarelo'
+
+
+
+
+    </script>
+</body>
+</html>
