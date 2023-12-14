@@ -1,0 +1,73 @@
+ex001 -
+html : linguagem de marcação 
+css : linguagem de estilo
+javaScript : linguagem de programação
+
+Meta é o sobre a estrutura do HTML, define qualquer informação de metadados que não podem ser definidos por outros elementos HTML. link: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta
+
+<h1>Título</h1> // <h1> É usado para títulos, o número indica o nível.
+<style> </style> // O espaço <style></style> é usado para desenvolver o designer.
+
+<script> </script> //Geralmente se colocar no final do <body></body>, é a parte de programação do site.
+/* comentário do css é assim */
+
+/*
+//lugar no comentário é no script
+/* COMENTÁRIO 
+COM 
+MAIS
+ LINHAS */
+ // pode ser utlilizado para isolar partes do código
+/*
+window.alert('ALERTA DE MENSAGEM')
+window.prompt('Caixa com espaço para inserir texto')
+window.confirm('só confirmar')
+
+'aspas simples'
+"aspas duplas"
+`crase`
+
+Identificadores:
+
+*Podem começar com LETRA, $ OU _
+*Não pode começãr com número
+*É possível usar LETRAS OU NÚMERO
+*É possível usar ACENTOS e SIMBOLOS
+*Não pode conter ESPAÇOS
+*Não pode ser PALAVRAS RESERVADAS
+
+*****typeof é para saber o tipo da informação, se é texto, numero, objeto, função
+*/
+
+
+
+
+// Tipos de Condição
+
+Condição simples
+if(Condição) {
+    True
+}
+
+if (Condição) {
+    True
+} else {
+    false
+}
+
+CONDIÇÃO MULTIPLA
+
+switch (expressão) {
+    case valor 1:
+    
+        break
+    case valor 2:
+    
+        break    
+    case valor 3:
+    
+        break    
+    default:
+
+        break
+}
