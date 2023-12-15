@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Aula 01 - ex001"</title>
+    <title>"Aula 3 - ex003"</title>
     <style>
         body {
             background-color: black;
@@ -18,9 +18,10 @@
     <p> ......js...... </p>
     <p> Explicar... </p>
    <script>
-window.alert('JANELA DE ALERTA DE MENSAGEM')
-window.prompt('Alerta com espaço para digitar alguma informação')
-window.confirm('Alerta apenas com os botões "OK" e "Cancelar"')
+    var n1 = window.prompt('Digite um número')              //window.propt           - Retorna uma string
+    var n2 = Number(window.prompt('Digite outro número'))   //Number(window.promt()) - Retornar um número
+    var s = n1 + n2
+                window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // faz uma concatenção entre os valores, não vai dar o resultado esperado.
    </script>
 </body>
 </html>

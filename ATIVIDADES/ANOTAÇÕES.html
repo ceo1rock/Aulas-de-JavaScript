@@ -1,4 +1,4 @@
-ex001 -
+ex001 -------------------------------------------------------------
 html : linguagem de marcação 
 css : linguagem de estilo
 javaScript : linguagem de programação
@@ -44,7 +44,60 @@ Identificadores:
 typeof var
 
 
-ex002 - 
+ex002 -------------------------------------------------------------
+Converter para número:
+// Number.parseInt      - Converte para número inteiro
+// Number.parseFloat    - Converte para float, décimal
+// Number               - Converte para número float, décimal
+// String               - Converte para String, texto
+
+Converter para texto:
+String(n)
+n.toString()
+
++ "String"+"String" - Vai concatenar o texto
++ Number+Number     - Vai somar
+
+//Formatando String
+var s = 'javaScript'
+'Eu estou aprendendo s'     // Não faz interpolação
+'Eu estou aprendendo' + s   // usa concatenação
+`Eu estou aprendendo ${s}`  // usa template string  (placeholder)
+
+
+ex004 -------------------------------------------------------------
+
+var nome = 'Gustavo'
+var idade = 41
+var nota = 5.5
+'O aluno ' + nome + 'com ' + idade + 'a nos, tirou a nota ' + nota
+`O Aluno $(nome) com $(idade) anos tirou a nota $(nota)`
+
+s.length            // quantidade que a string pode ter
+s.toUpperCase()     //tudo para 'MAIÚSCULAS'
+s.toLowerCase()     //tudo para 'minúsculas'
+
+//Formatando Números: (*Usar no terminal*)
+var n1 = 1545.5
+R = undefined
+n1.toFixed(2)
+R = 1545.50
+n1.toFixed(2).replace('.',',')
+R = 1545,50
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+R = R$ 1,545.00
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+R = US$ 1,545.00
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+R = € 1,545.00
+(* O terminal não inverte os '.' e ',' de acordo com a  moeda,
+mas o navegador faz a conversão,
+não precisa faze o replace como no exemplo abaixo *)
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}).replace('.',',')
+
+
+
+
 
 
 
