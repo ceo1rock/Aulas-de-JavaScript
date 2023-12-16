@@ -190,15 +190,17 @@ n1 != n2                // o primeiro núemro é diferente do segundo?
 !== --> Desigual restrito ( SÃO IGUAIS MAS DE TIPO DIFERENTES)
 
 
-5   ==     5  -->  true     // 5 é igual a 5
-5   ==    '5' -->  true     // 5 é igual a 5
-5   ===   '5' -->  false    // o 5 é identido, tem o tipo diferente do outro 5
-5   ===    5  -->  true     // o 5 é identico e do mesmo tipo
-5   !==    4  -->  true     // o 5 é di, tem o mesmo tipo do 4?
+5   ==     5    -->  true     // 5 é igual a 5
+5   ==    '5'   -->  true     // 5 é igual a 5
+5   ===   '5'   -->  false    // o 5 é identido, tem o tipo diferente do outro 5
+5   ===    5    -->  true     // o 5 é identico, tem o mesmo valor e do mesmo tipo
+5   !==    "5"  -->  true     // o 5 é disigual restrito, TIPOS DIFERENTES, MAS MANTÉM O VALOR INTERNO IGUAL
 
 typeof para ver o tipo, number, string 
 
-LOGICOS:
+
+*******************************************OPERADOR LÓGICOS*******************************************
+
 !   negação  - Not
 && conjunção - And/E
 || disjunção - Or/Ou (Alt + 124 )
@@ -236,19 +238,18 @@ Ordem de resolução dos OPERADORES LOGICO:
 
 idade >= 11 && idade <= 17          // a idade esta entre 15 e 17?
 estado == 'RJ' || estado == 'SP'    // o estado é RJ ou SP?
-salário > 1500 && sexo != 'M'       // o salário é maior que 1500 e o sexo é diferente de M?
+salário > 1500 && sexo != 'M'       // o salário é maior que 1500 e o sexo é diferente de M(E  não é uma mulher)?
 
+PRECEDÊNCIA DOS OPERADORES
+ARITMÉTICOS - () ** / 
+RELACIONAIS - > < >=  (ler de esquerda para direita)
+LÓGICOS     -   ! 
+                &&
+                ||
 
-PRECEDÊNCIA
-() ** / 
-> < >=  (ler de esquerda para direita)
-!
-&&
-||
-
-TERNÁRIO
-
-?:
+*******************************************OPERADOR TERNÁRIO*******************************************
+?
+:
 
 TESTE ? TRUE : FALSE
 
