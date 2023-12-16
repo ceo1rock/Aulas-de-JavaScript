@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
     <style>
-        body {
-            background-color: black;
-            color: rgba(119, 183, 236, 0.875); 
-            font: normal 16pt Arial;
-        }
+       body{
+        background: rgba(95, 71, 71, 0.942);
+        color: white;
+        font: white 18pt Arial;
+       }
     </style>
 </head>
 <body>
@@ -18,28 +18,30 @@
     <p> Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div>Clique em mim</div>
-    <div id="msg">Clique em mim</div>
-    <div id="msg1">Clique em mim</div>
-    <div class="msg">Clique em mim</div>
+    <div id="msg">Clique na MSG</div>
+    <div id="msg1">Clique na MSG1</div><br>
+    <div class="msg">Clique em class MSG</div><br>
     <div name="msg">Clique em mim</div>
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0] // tem que colocar qual 'p' pois Elements esta no plural
-        var p2 = window.document.getElementsByTagName('p')[1]
-        window.document.write('Esta escrito assim: ' + p1.innerText)
-        window.document.write(`Esta escrito assim:  ${p2.innerText}`)
+        var p1 = window.document.getElementsByTagName('p')[0] // tem que colocar a posição que o 'p' está no [], primeira posição é 0(zero).
+        
+        window.document.write('Parágrafo 1: Esta escrito: ' + p1.innerText)
         p1.style.color = 'blue'
+       
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`<br>Parágrafo 2: Esta escrito:  ${p2.innerText}<br>`)
+       
         
         var corpo = window.document.body
         corpo.style.background = 'blue'
+
         window.document.write(p2.innerHTML)
        
         var d = window.document.getElementById('msg') //não precisa do window
         d.style.background = 'green'
         // d.innerText = 'Estou aguardando!!!'
-        window.document.getElementById('msg').innerText = 'Olá'
-        window.document.getElementsByClassName('msg')[0]
+        window.document.getElementById('msg').innerText = 'Consegui alterar a ID MSG'
         
-
         
         var f = window.document.getElementsByName('msg')[0]
         f.style.background = 'black'
@@ -48,14 +50,12 @@
         var e = window.document.querySelector('div#msg1') // Toda id é representada por # e class é pontinho '.'
         e.style.color = 'blue'
         e.style.background = 'pink'
-        e.innerText = 'EU CONSEGUI'
+        e.innerText = 'EU CONSEGUI ALTERAR COM O querySeletor'
 
         var g = window.document.querySelector('div.msg') // Toda id é representada por # e class é pontinho '.'
         g.style.color = 'black'
         g.style.background = 'yellow'
-        g.innerText = 'EU CONSEGUI pelo poder do amarelo'
-
-
+        g.innerText = 'EU CONSEGUI ALTERAR uma class com o querySeletor'
 
 
     </script>
