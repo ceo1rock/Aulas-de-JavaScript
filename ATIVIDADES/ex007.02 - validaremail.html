@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar email</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validar email</h1>Digite seu nome: 
+    <input type="text" name="txtn1" id="txtn1"> <br><br> 
+    Digite seu email:
+    <input type="text" name="txtn2" id="txtn2"> <br>
+    <p></p>
+    <input type="button" value="Validar" onclick="somar()">
+    <div id="res"> Resultado</div>
+    <script>
+        
+            var NOME = window.document.getElementById('txtn1')
+            var EMAIL = window.document.querySelector('input#txtn2')
+          
+            window.document.write(`Seu nome é ${NOME.innerHTML} e seu email é <strong>${EMAIL.innerHTML}</strong`)
+
+        
+    </script> 
+</body>
+</html>
