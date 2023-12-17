@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos f</title>
+    <style> 
+     div#area {
+        font: normal 16pt Arial;
+        background: black;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Interagir AQUI!!!    
+      
+    <script> // tudo que ficar dentro do função, só vai executar quando for chamado
+        //var a = window.document.getElementById('area')
+        var a = window.document.querySelector('div#area') // Toda id é representada por # e class é pontinho '.'
+
+      /*  a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)*/
+
+        function clicar() {
+            a.innerText = 'Clicou!' //CLICAR NA ÁREA
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Sai daqui!' //ENTRAR COM O MOUSE NA ÁREA
+            a.style.background = 'blue'
+        }
+        function sair() {
+            a.innerText = 'Saiu!' // SAIR COM O MOUSE
+            a.style.background = 'pink'
+        }
+
+    </script>
+    </div>   
+</body>
+</html> 
