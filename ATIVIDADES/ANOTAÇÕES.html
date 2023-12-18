@@ -216,7 +216,7 @@ true && false -->   false
 false && true -->   false
 false && false -->  false
 
-|| disjunção (Só precisa de um verdadeiro, indiferente do lado)(ler "ou"'pipe')
+|| disjunção (Só precisa de um verdadeiro, indiferente do lado)(ler "ou"'pipe') ATALHO: (Alt+124)
 true || true -->    true
 true || false -->   true
 false || true -->   true
@@ -351,14 +351,27 @@ LISTA DE EVENTOS POSSÍVEIS:
         True
     }
     
+
+    Condição Composta
     if (Condição) {
         True
     } else {
         false
     }
     
-    
-    
+    Condições Aninhadas
+    if(condição1){
+        bloco1
+    }else{
+        if(condição2){
+            bloco2
+        }else{
+            bloco3
+        }
+    }
+
+
+
     CONDIÇÃO MULTIPLA
     
     switch (expressão) {
