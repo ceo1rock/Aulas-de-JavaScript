@@ -22,37 +22,37 @@ if (fAno.value.length == 0 || Number(fAno.value)>ano)
         gênero = 'Homem'
         if(idade >= 0 && idade < 4) {
             // bebe
-            img.setAttribute('src', '01 - BEBE M')
+            img.setAttribute('src', 'BEBE M.PNG')
         }else if (idade < 12 ){
             // criança
-            img.setAttribute('src', '02 - CRIANÇA M')
+            img.setAttribute('src', 'CRIANCA M.PNG')
         }else if ( idade < 17){
             // adolecente
-            img.setAttribute('src', '03 - ADOLECENTE M')
+            img.setAttribute('src', 'ADOLESCENTE M.PNG')
         }else if ( idade < 60){
             // adulto
-            img.setAttribute('src', '04 - ADULTO M')
+            img.setAttribute('src', 'ADULTO M.PNG')
         }else if ( idade >= 60){
             // idoso
-            img.setAttribute('src', '05 - IDOSO M')
+            img.setAttribute('src', 'IDOSO M.PNG')
         }
     }else {
-        gênero = 'MUlher'
+        gênero = 'Mulher'
         if(idade >= 0 && idade < 4) {
             // bebe
-            img.setAttribute('src', '01 - BEBE F')
+            img.setAttribute('src', 'BEBE F.PNG')
         }else if (idade < 12 ){
             // criança
-            img.setAttribute('src', '02 - CRIANÇA F')
+            img.setAttribute('src', 'CRIANCA F.PNG')
         }else if ( idade < 17){
             // adolecente
-            img.setAttribute('src', '03 - ADOLECENTE F')
+            img.setAttribute('src', 'ADOLESCENTE F.PNG')
         }else if ( idade < 60){
             // adulto
-            img.setAttribute('src', '04 - ADULTO F')
+            img.setAttribute('src', 'ADULTO F.PNG')
         }else if( idade >= 60){
             // idoso
-            img.setAttribute('src', '05 - IDOSO F')
+            img.setAttribute('src', 'IDOSO F.PNG')
         }
     }
     res.innerHTML = `Detectamos: ${gênero} com a idade de: ${idade}`
