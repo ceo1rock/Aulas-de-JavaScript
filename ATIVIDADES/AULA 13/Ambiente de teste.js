@@ -38,3 +38,9 @@ console.log('___________________________________________________________________
 for (i=1; i<=10; i++){ // sem var
     console.log(`contador do i: ${i}`)
 }
+
+console.log('vai começar...') // CÓDIGO PARA ENTENDER OS PROCESSOS QUE ACONTECE DENTRO DO FOR(;;){}
+for (c=1 ; c<=5 ; c++) {
+    console.log(`Contador: ${c}`)
+}
+console.log('FIM')
