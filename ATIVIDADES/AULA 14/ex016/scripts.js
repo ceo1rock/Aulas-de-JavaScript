@@ -1,26 +1,32 @@
+// Curso online - funcionando
 
-// CURSO
-function contar() {
-    var ini = document.getElementById('txti')
-    var fim = document.getElementById('txtf')
-    var passo = document.getElementById('txtp')
-    var res = document.getElementById('res')
-   
-    if ( ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ) {
-        window.alert(`[ERRO!] Faltam dados!` )
-    } else {
-        res.innerHTML = "Contando..."
+function contar () {
+    ini = document.getElementById('txti')
+    fim = document.getElementById('txtf')
+    passo = document.getElementById('txtp')
+    res = document.getElementById('res')
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        alert('[ERRO] FALTAM DADOS')
+    }else {
+        res.innerHTML = 'Contando:'
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-       
-        for ( c = i ; c <= f ; c += p){ // (c=c+p) isso é igual isso: (c+=p)
-            res.innerHTML += `${c} \1F449	`
-        
+        if ( i < f) { // CONTAGEM CRESCENTE
+            for ( c = i; c <= f ; c += p) {
+                res.innerHTML += `${c} \u{1f449}`
+        }
+    } else {
+        // CONTAGEM REGRESSIVA
+        for (c = i ; c >= f ; c -= p) {
+            res.innerHTML += `${c} \u{1f449}`
+        }
+
     }
+    res.innerHTML += `\u{1f3c1}`
 }
 }
-res.style.textAlign = 'center' 
+
 
 
 /* MEU CÓDIGO
@@ -60,4 +66,4 @@ function contar() {
         }
     }
 }
- */
+*/
