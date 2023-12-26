@@ -37,6 +37,6 @@ for(let pos =0; pos < num.length; pos++) {
 
 let valores = [ 8, 1, 7, 4, 2, 9]
 
-for ( n = 0; n < valores.length; n = n+2) {
+for ( n = 0; n < valores.length; n[1] = n+2) {
     console.log(valores[n])
 }
