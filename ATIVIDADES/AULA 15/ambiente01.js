@@ -1,3 +1,4 @@
+
 let num = [5, 8, 4]
 num[3] = 6 // adicionará o número 6 no indice 3, que ainda não existe e será automaticamente criado
 num.push(7) // .push  sempre adiciona no final da lista
@@ -33,10 +34,4 @@ console.log(num[5])
 
 for(let pos =0; pos < num.length; pos++) {
     console.log(num[pos])
-}
-
-let valores = [ 8, 1, 7, 4, 2, 9]
-
-for ( n = 0; n < valores.length; n = n+2) {
-    console.log(valores[n])
 }

@@ -1,0 +1,18 @@
+
+let valores = [ 8, 1, 7, 4, 2, 9]
+
+/*
+for ( n = 0; n < valores.length; n++) {
+    console.log(valores[n])
+}
+*/
+
+for(pos in valores){
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+
+/*
+valores.indexOf(7) // metodo index retorna a posição que o valor esta guardado, se ele existir dentro do vetor, se o valor não existir, retorna o valor -1 */
+
+let posi = valores.indexOf(2)
+console.log(`O Valor esta na posição ${posi}`)
